@@ -7,4 +7,5 @@ def salvar_bronze():
     df.to_parquet("data/bronze/deputados.parquet", index=False)
     print(f"Salvo {len(df)} deputados em bronze.")
 
-salvar_bronze()
+if __name__ == "__main__":
+transformar_silver()
