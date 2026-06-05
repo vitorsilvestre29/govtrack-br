@@ -8,4 +8,4 @@ def salvar_bronze():
     print(f"Salvo {len(df)} deputados em bronze.")
 
 if __name__ == "__main__":
-transformar_silver()
+    salvar_bronze()
