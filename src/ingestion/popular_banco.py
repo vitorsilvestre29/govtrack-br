@@ -1,5 +1,5 @@
 import pandas as pd
-from database import db_connect
+from src.ingestion.database import db_connect
 
 def popular_banco():
     df = pd.read_parquet("data/silver/deputados.parquet")
@@ -9,6 +9,7 @@ def popular_banco():
         cursor.execute("""
             INSERT INTO deputados (id, nome, siglaPartido, siglaUf, idLegislatura, email)
             VALUES (%s, %s, %s, %s, %s, %s)
+            ON CONFLICT (id) DO NOTHING
 """, (row['id'], row['nome'], row['siglaPartido'], row['siglaUf'], row['idLegislatura'], row['email']))
     conn.commit()
     print(f"Populado banco com {len(df)} deputados.")

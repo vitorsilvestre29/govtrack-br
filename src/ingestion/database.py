@@ -1,7 +1,7 @@
 import psycopg2
 
 def db_connect ():
-    return psycopg2.connect(host="localhost", database="govtrack", port=5432, user="govtrack", password="govtrack123")
+    return psycopg2.connect(host="postgres", database="govtrack", port=5432, user="govtrack", password="govtrack123")
 
 if __name__ == "__main__":
     conn = db_connect()

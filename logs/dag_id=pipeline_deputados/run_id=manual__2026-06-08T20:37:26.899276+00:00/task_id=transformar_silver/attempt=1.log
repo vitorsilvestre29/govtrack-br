@@ -1,0 +1,39 @@
+[2026-06-08T20:37:30.096+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.transformar_silver manual__2026-06-08T20:37:26.899276+00:00 [queued]>
+[2026-06-08T20:37:30.108+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.transformar_silver manual__2026-06-08T20:37:26.899276+00:00 [queued]>
+[2026-06-08T20:37:30.109+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-08T20:37:30.109+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-06-08T20:37:30.109+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-08T20:37:30.126+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): transformar_silver> on 2026-06-08 20:37:26.899276+00:00
+[2026-06-08T20:37:30.137+0000] {standard_task_runner.py:55} INFO - Started process 232 to run task
+[2026-06-08T20:37:30.143+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_deputados', 'transformar_silver', 'manual__2026-06-08T20:37:26.899276+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_deputados.py', '--cfg-path', '/tmp/tmp8koo_8j_']
+[2026-06-08T20:37:30.146+0000] {standard_task_runner.py:83} INFO - Job 11: Subtask transformar_silver
+[2026-06-08T20:37:30.239+0000] {task_command.py:388} INFO - Running <TaskInstance: pipeline_deputados.transformar_silver manual__2026-06-08T20:37:26.899276+00:00 [running]> on host 78cfd50ce143
+[2026-06-08T20:37:30.336+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=pipeline_deputados
+AIRFLOW_CTX_TASK_ID=transformar_silver
+AIRFLOW_CTX_EXECUTION_DATE=2026-06-08T20:37:26.899276+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-06-08T20:37:26.899276+00:00
+[2026-06-08T20:37:30.631+0000] {logging_mixin.py:137} INFO - Salvo 512 deputados transformados para silver.
+[2026-06-08T20:37:30.633+0000] {logging_mixin.py:137} INFO - id               0
+nome             0
+siglaPartido     0
+siglaUf          0
+idLegislatura    0
+email            0
+dtype: int64
+[2026-06-08T20:37:30.634+0000] {logging_mixin.py:137} INFO - id                int64
+nome             object
+siglaPartido     object
+siglaUf          object
+idLegislatura     int64
+email            object
+dtype: object
+[2026-06-08T20:37:30.637+0000] {logging_mixin.py:137} INFO - 0
+[2026-06-08T20:37:30.637+0000] {python.py:177} INFO - Done. Returned value was: None
+[2026-06-08T20:37:30.655+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=pipeline_deputados, task_id=transformar_silver, execution_date=20260608T203726, start_date=20260608T203730, end_date=20260608T203730
+[2026-06-08T20:37:30.716+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-06-08T20:37:30.750+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

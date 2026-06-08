@@ -34,6 +34,7 @@ services:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./src:/opt/airflow/src
+    - ./data:/opt/airflow/data
 
   airflow-scheduler:
     image: apache/airflow:2.5.1
@@ -47,5 +48,6 @@ services:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./src:/opt/airflow/src
+    - ./data:/opt/airflow/data
 
 
