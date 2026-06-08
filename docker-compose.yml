@@ -11,3 +11,39 @@ services:
     image: adminer
     ports:
       - "8080:8080"
+
+  postgres-airflow:
+    image: postgres:15
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow123
+      - POSTGRES_DB=airflow
+    ports:
+      - "5433:5432"
+  airflow-webserver:
+    image: apache/airflow:2.5.1
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow123@postgres-airflow:5432/airflow
+    ports:
+      - "8081:8080"
+    depends_on:
+      - postgres-airflow
+    command: webserver
+    volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+
+  airflow-scheduler:
+    image: apache/airflow:2.5.1
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow123@postgres-airflow:5432/airflow
+    depends_on:
+      - postgres-airflow
+    command: scheduler  
+    volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+
+
