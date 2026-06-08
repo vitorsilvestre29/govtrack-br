@@ -1,0 +1,1039 @@
+[2026-06-08T20:05:51.252+0000] {processor.py:153} INFO - Started process (PID=178) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:05:51.255+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:05:51.258+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:05:51.257+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:05:51.279+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:05:51.272+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:05:51.280+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:05:51.333+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.101 seconds
+[2026-06-08T20:06:13.368+0000] {processor.py:153} INFO - Started process (PID=183) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:13.370+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:13.371+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:13.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:13.376+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:13.374+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:06:13.376+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:13.413+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:06:19.408+0000] {processor.py:153} INFO - Started process (PID=188) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:19.410+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:19.410+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:19.410+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:19.415+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:19.413+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 18
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:19.416+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:19.459+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.056 seconds
+[2026-06-08T20:06:21.493+0000] {processor.py:153} INFO - Started process (PID=193) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:21.494+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:21.495+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:21.495+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:21.498+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:21.497+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:21.498+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:21.536+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.048 seconds
+[2026-06-08T20:06:31.568+0000] {processor.py:153} INFO - Started process (PID=198) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:31.570+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:31.573+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:31.572+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:31.577+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:31.575+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:31.578+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:31.617+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.054 seconds
+[2026-06-08T20:06:34.641+0000] {processor.py:153} INFO - Started process (PID=203) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:34.642+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:34.643+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:34.643+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:34.647+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:34.645+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:34.647+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:34.684+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.049 seconds
+[2026-06-08T20:06:40.720+0000] {processor.py:153} INFO - Started process (PID=208) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:40.721+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:40.723+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:40.723+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:40.729+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:40.727+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:40.730+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:40.775+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.064 seconds
+[2026-06-08T20:06:46.787+0000] {processor.py:153} INFO - Started process (PID=213) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:46.788+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:46.789+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:46.789+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:46.792+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:46.791+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:46.793+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:46.831+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.051 seconds
+[2026-06-08T20:06:56.891+0000] {processor.py:153} INFO - Started process (PID=218) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:56.892+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:06:56.892+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:56.892+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:56.896+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:06:56.894+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:06:56.896+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:06:56.934+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:07:00.938+0000] {processor.py:153} INFO - Started process (PID=223) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:00.939+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:00.940+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:00.940+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:00.945+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:00.943+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:00.945+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:00.978+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.044 seconds
+[2026-06-08T20:07:08.030+0000] {processor.py:153} INFO - Started process (PID=228) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:08.032+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:08.033+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:08.033+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:08.037+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:08.035+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:08.037+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:08.079+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.054 seconds
+[2026-06-08T20:07:11.068+0000] {processor.py:153} INFO - Started process (PID=233) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:11.069+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:11.070+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:11.070+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:11.074+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:11.072+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:11.074+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:11.107+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.045 seconds
+[2026-06-08T20:07:16.161+0000] {processor.py:153} INFO - Started process (PID=238) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:16.162+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:16.163+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:16.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:16.166+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:16.165+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:16.167+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:16.205+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:07:22.210+0000] {processor.py:153} INFO - Started process (PID=243) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:22.212+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:22.213+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:22.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:22.217+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:22.215+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:22.217+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:22.258+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.054 seconds
+[2026-06-08T20:07:24.281+0000] {processor.py:153} INFO - Started process (PID=248) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:24.282+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:24.283+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:24.283+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:24.287+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:24.285+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:24.287+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:24.331+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.056 seconds
+[2026-06-08T20:07:27.335+0000] {processor.py:153} INFO - Started process (PID=253) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:27.336+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:27.337+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:27.337+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:27.341+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:27.340+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:27.341+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:27.378+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:07:30.412+0000] {processor.py:153} INFO - Started process (PID=258) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:30.413+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:30.413+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:30.413+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:30.416+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:30.415+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:30.416+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:30.456+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.049 seconds
+[2026-06-08T20:07:32.447+0000] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:32.448+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:32.449+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:32.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:32.452+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:32.450+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:32.452+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:32.486+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.044 seconds
+[2026-06-08T20:07:45.574+0000] {processor.py:153} INFO - Started process (PID=268) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:45.576+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:45.577+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:45.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:45.580+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:45.578+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:45.580+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:45.629+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.059 seconds
+[2026-06-08T20:07:46.674+0000] {processor.py:153} INFO - Started process (PID=273) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:46.675+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:46.676+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:46.676+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:46.678+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:46.677+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:46.679+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:46.714+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.044 seconds
+[2026-06-08T20:07:52.713+0000] {processor.py:153} INFO - Started process (PID=278) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:52.714+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:07:52.715+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:52.715+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:52.718+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:07:52.716+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:07:52.718+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:07:52.750+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.042 seconds
+[2026-06-08T20:08:22.941+0000] {processor.py:153} INFO - Started process (PID=283) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:22.943+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:22.943+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:22.943+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:22.946+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:22.945+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:22.947+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:22.990+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.052 seconds
+[2026-06-08T20:08:23.968+0000] {processor.py:153} INFO - Started process (PID=288) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:23.969+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:23.970+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:23.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:23.972+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:23.971+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:23.973+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:24.010+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:08:25.988+0000] {processor.py:153} INFO - Started process (PID=293) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:25.989+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:25.990+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:25.989+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:25.993+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:25.991+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:25.993+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:26.029+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:08:28.073+0000] {processor.py:153} INFO - Started process (PID=298) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:28.076+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:28.077+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:28.077+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:28.081+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:28.079+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:28.082+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:28.116+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.046 seconds
+[2026-06-08T20:08:29.100+0000] {processor.py:153} INFO - Started process (PID=303) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:29.101+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:29.102+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:29.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:29.105+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:29.104+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:29.105+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:29.141+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:08:32.173+0000] {processor.py:153} INFO - Started process (PID=308) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:32.175+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:32.176+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:32.175+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:32.178+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:32.177+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 19
+    ) as dag:
+       ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:32.178+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:32.214+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.045 seconds
+[2026-06-08T20:08:35.212+0000] {processor.py:153} INFO - Started process (PID=313) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:35.213+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:35.214+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:35.214+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:35.219+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:35.218+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:08:35.220+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:35.256+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.048 seconds
+[2026-06-08T20:08:39.291+0000] {processor.py:153} INFO - Started process (PID=318) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:39.292+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:39.293+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:39.292+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:39.295+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:39.294+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 13
+    )
+    ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:39.295+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:39.330+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.043 seconds
+[2026-06-08T20:08:44.346+0000] {processor.py:153} INFO - Started process (PID=323) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:44.347+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:44.348+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:44.348+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:44.352+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:44.350+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:08:44.352+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:44.384+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.046 seconds
+[2026-06-08T20:08:47.410+0000] {processor.py:153} INFO - Started process (PID=328) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:47.411+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:47.412+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:47.412+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:47.416+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:47.415+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:08:47.416+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:47.453+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:08:49.448+0000] {processor.py:153} INFO - Started process (PID=333) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:49.449+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:49.450+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:49.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:49.452+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:49.451+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 4
+    from src
+           ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:49.452+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:49.486+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.043 seconds
+[2026-06-08T20:08:57.541+0000] {processor.py:153} INFO - Started process (PID=338) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:57.543+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:08:57.544+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:57.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:57.546+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:08:57.545+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 5
+    from src
+           ^
+SyntaxError: invalid syntax
+[2026-06-08T20:08:57.547+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:08:57.583+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.048 seconds
+[2026-06-08T20:09:00.577+0000] {processor.py:153} INFO - Started process (PID=343) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:00.578+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:09:00.579+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:00.579+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:00.584+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:00.583+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:09:00.585+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:00.620+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:09:01.641+0000] {processor.py:153} INFO - Started process (PID=348) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:01.642+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:09:01.643+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:01.642+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:01.647+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:01.646+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:09:01.648+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:01.678+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.041 seconds
+[2026-06-08T20:09:11.730+0000] {processor.py:153} INFO - Started process (PID=353) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:11.732+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:09:11.732+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:11.732+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:11.735+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:11.734+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 6
+    from src.ingestion.popular_banco import
+                                           ^
+SyntaxError: invalid syntax
+[2026-06-08T20:09:11.735+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:11.772+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.048 seconds
+[2026-06-08T20:09:14.779+0000] {processor.py:153} INFO - Started process (PID=358) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:14.781+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:09:14.782+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:14.782+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:14.787+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:14.786+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:09:14.788+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:14.825+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:09:20.861+0000] {processor.py:153} INFO - Started process (PID=363) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:20.863+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:09:20.864+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:20.864+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:20.869+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:20.868+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:09:20.870+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:20.910+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.054 seconds
+[2026-06-08T20:09:51.057+0000] {processor.py:153} INFO - Started process (PID=368) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:51.061+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:09:51.062+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:51.062+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:51.066+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:09:51.065+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:09:51.067+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:09:51.102+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:10:07.186+0000] {processor.py:153} INFO - Started process (PID=373) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:07.187+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:07.188+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:07.187+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:07.191+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:07.190+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:10:07.192+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:07.229+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:10:08.223+0000] {processor.py:153} INFO - Started process (PID=378) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:08.224+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:08.224+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:08.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:08.227+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:08.226+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 4
+    from src
+           ^
+SyntaxError: invalid syntax
+[2026-06-08T20:10:08.227+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:08.261+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.042 seconds
+[2026-06-08T20:10:10.287+0000] {processor.py:153} INFO - Started process (PID=383) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:10.287+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:10.288+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:10.288+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:10.292+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:10.291+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:10:10.293+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:10.323+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.041 seconds
+[2026-06-08T20:10:18.363+0000] {processor.py:153} INFO - Started process (PID=388) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:18.365+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:18.366+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:18.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:18.374+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:18.370+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:10:18.375+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:18.435+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.078 seconds
+[2026-06-08T20:10:20.422+0000] {processor.py:153} INFO - Started process (PID=393) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:20.423+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:20.424+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:20.424+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:20.427+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:20.426+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:10:20.428+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:20.461+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.043 seconds
+[2026-06-08T20:10:22.497+0000] {processor.py:153} INFO - Started process (PID=398) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:22.499+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:22.499+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:22.499+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:22.505+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:22.503+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:10:22.505+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:22.541+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.049 seconds
+[2026-06-08T20:10:52.698+0000] {processor.py:153} INFO - Started process (PID=403) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:52.699+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:10:52.699+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:52.699+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:52.704+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:10:52.703+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:10:52.704+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:10:52.737+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.043 seconds
+[2026-06-08T20:11:18.856+0000] {processor.py:153} INFO - Started process (PID=408) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:18.858+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:11:18.859+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:18.859+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:18.863+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:18.861+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:11:18.864+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:18.895+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.044 seconds
+[2026-06-08T20:11:49.043+0000] {processor.py:153} INFO - Started process (PID=413) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:49.044+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:11:49.045+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:49.045+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:49.047+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:49.046+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:11:49.048+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:49.079+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.040 seconds
+[2026-06-08T20:11:53.090+0000] {processor.py:153} INFO - Started process (PID=418) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:53.092+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:11:53.093+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:53.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:53.095+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:53.094+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:11:53.096+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:53.131+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.046 seconds
+[2026-06-08T20:11:54.144+0000] {processor.py:153} INFO - Started process (PID=423) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:54.145+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:11:54.145+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:54.145+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:54.148+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:54.147+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:11:54.148+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:54.178+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.039 seconds
+[2026-06-08T20:11:59.200+0000] {processor.py:153} INFO - Started process (PID=428) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:59.201+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:11:59.201+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:59.201+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:59.204+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:11:59.203+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:11:59.204+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:11:59.242+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.047 seconds
+[2026-06-08T20:12:13.319+0000] {processor.py:153} INFO - Started process (PID=433) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:12:13.321+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:12:13.322+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:12:13.322+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:12:13.325+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:12:13.324+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:12:13.326+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:12:13.365+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.052 seconds
+[2026-06-08T20:12:43.514+0000] {processor.py:153} INFO - Started process (PID=438) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:12:43.516+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:12:43.517+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:12:43.517+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:12:43.521+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:12:43.519+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 35
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:12:43.522+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:12:43.558+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:13:02.680+0000] {processor.py:153} INFO - Started process (PID=443) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:02.682+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:13:02.683+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:13:02.683+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:02.686+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:13:02.684+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 34
+    tarefa_bronze >> tarefa_silver >> tarefa_gold >> tarefa_banco
+                                                                ^
+IndentationError: unindent does not match any outer indentation level
+[2026-06-08T20:13:02.686+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:02.723+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.048 seconds
+[2026-06-08T20:13:19.786+0000] {processor.py:153} INFO - Started process (PID=448) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:19.788+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:13:19.789+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:13:19.788+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:19.795+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:13:19.792+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:13:19.796+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:19.837+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.057 seconds
+[2026-06-08T20:13:50.032+0000] {processor.py:153} INFO - Started process (PID=453) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:50.033+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:13:50.034+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:13:50.034+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:50.040+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:13:50.038+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 3, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:13:50.040+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:13:50.079+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.053 seconds
+[2026-06-08T20:14:03.126+0000] {processor.py:153} INFO - Started process (PID=458) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:03.129+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:14:03.130+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:14:03.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:03.133+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:14:03.132+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 21
+    tarefa_silver = PythonOperator(
+    ^
+IndentationError: unexpected indent
+[2026-06-08T20:14:03.134+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:03.166+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.044 seconds
+[2026-06-08T20:14:06.194+0000] {processor.py:153} INFO - Started process (PID=463) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:06.195+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:14:06.197+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:14:06.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:06.200+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:14:06.199+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 21
+    tarefa_silver = PythonOperator(
+    ^
+IndentationError: unexpected indent
+[2026-06-08T20:14:06.201+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:06.243+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.055 seconds
+[2026-06-08T20:14:36.384+0000] {processor.py:153} INFO - Started process (PID=468) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:36.385+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:14:36.386+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:14:36.386+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:36.388+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:14:36.387+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 21
+    tarefa_silver = PythonOperator(
+    ^
+IndentationError: unexpected indent
+[2026-06-08T20:14:36.389+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:14:36.418+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.038 seconds
+[2026-06-08T20:15:06.576+0000] {processor.py:153} INFO - Started process (PID=473) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:06.577+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:15:06.578+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:06.578+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:06.582+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:06.580+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 21
+    tarefa_silver = PythonOperator(
+    ^
+IndentationError: unexpected indent
+[2026-06-08T20:15:06.583+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:06.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.055 seconds
+[2026-06-08T20:15:36.760+0000] {processor.py:153} INFO - Started process (PID=478) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:36.762+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:15:36.763+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:36.763+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:36.768+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:36.766+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 21
+    tarefa_silver = PythonOperator(
+    ^
+IndentationError: unexpected indent
+[2026-06-08T20:15:36.768+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:36.804+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.050 seconds
+[2026-06-08T20:15:38.811+0000] {processor.py:153} INFO - Started process (PID=483) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:38.811+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:15:38.812+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:38.812+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:38.812+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:38.812+0000] {dagbag.py:320} INFO - File /opt/airflow/dags/pipeline_deputados.py assumed to contain no DAGs. Skipping.
+[2026-06-08T20:15:38.813+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:38.843+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.037 seconds
+[2026-06-08T20:15:50.921+0000] {processor.py:153} INFO - Started process (PID=488) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:50.922+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:15:50.922+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:50.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:50.923+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:15:50.923+0000] {dagbag.py:320} INFO - File /opt/airflow/dags/pipeline_deputados.py assumed to contain no DAGs. Skipping.
+[2026-06-08T20:15:50.924+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:15:50.950+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.035 seconds
+[2026-06-08T20:20:52.578+0000] {processor.py:153} INFO - Started process (PID=493) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:20:52.580+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:20:52.581+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:20:52.580+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:20:52.586+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:20:52.584+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 4, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:20:52.587+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:20:52.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.048 seconds
+[2026-06-08T20:21:22.753+0000] {processor.py:153} INFO - Started process (PID=498) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:21:22.754+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:21:22.755+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:21:22.755+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:21:22.760+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:21:22.758+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 4, in <module>
+    from src.ingestion.bronze import salvar_bronze
+ModuleNotFoundError: No module named 'src'
+[2026-06-08T20:21:22.760+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:21:22.794+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 0.046 seconds
+[2026-06-08T20:21:55.196+0000] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:21:55.201+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/pipeline_deputados.py for tasks to queue
+[2026-06-08T20:21:55.203+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:21:55.203+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:21:56.912+0000] {logging_mixin.py:137} INFO - [2026-06-08T20:21:56.909+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/pipeline_deputados.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_deputados.py", line 4, in <module>
+    from src.ingestion.bronze import salvar_bronze
+  File "/opt/airflow/src/ingestion/bronze.py", line 2, in <module>
+    from deputados import buscar_deputados
+ModuleNotFoundError: No module named 'deputados'
+[2026-06-08T20:21:56.912+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_deputados.py
+[2026-06-08T20:21:56.941+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/pipeline_deputados.py took 1.756 seconds
