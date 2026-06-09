@@ -12,15 +12,15 @@ models:
         description: "Nome completo do deputado."
         tests:
           - not_null
-      - name: siglaPartido
+      - name: siglapartido
         description: "Sigla do partido ao qual o deputado pertence."
         tests:
           - not_null
-      - name: siglaUf
+      - name: siglauf
         description: "Sigla da unidade federativa (estado) que o deputado representa."
         tests:
           - not_null
-      - name: idLegislatura
+      - name: idlegislatura
         description: "Identificador da legislatura à qual o deputado pertence."
         tests:
           - not_null
@@ -32,7 +32,7 @@ models:
   - name: mart_deputados_por_partido
     description: "Tabela de fatos que mostra a contagem de deputados por partido."
     columns:
-      - name: siglaPartido
+      - name: siglapartido
         description: "Sigla do partido político."
         tests:
           - unique
