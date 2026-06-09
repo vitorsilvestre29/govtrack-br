@@ -1,0 +1,1 @@
+SELECT id, nome, siglapartido, siglauf, idlegislatura, email FROM deputados WHERE nome IS NOT NULL
