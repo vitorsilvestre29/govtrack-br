@@ -1,0 +1,12 @@
+govtrack_dbt:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: govtrack
+      pass: govtrack123
+      dbname: govtrack
+      schema: public
+  target: dev
