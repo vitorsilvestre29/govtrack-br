@@ -1,5 +1,9 @@
-.venv/
+venv/
+.venv311/
 __pycache__/
+*.pyc
+data/
+logs/
 aula01.py
 aula02.py
 aula03.py
