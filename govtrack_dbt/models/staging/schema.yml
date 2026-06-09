@@ -1,0 +1,43 @@
+version: 2
+models:
+  - name: stg_deputados
+    description: "Tabela de deputados federais, contendo informações básicas como nome, partido, estado, legislatura e email."
+    columns:
+      - name: id
+        description: "Identificador único do deputado."
+        tests:
+          - unique
+          - not_null
+      - name: nome
+        description: "Nome completo do deputado."
+        tests:
+          - not_null
+      - name: siglapartido
+        description: "Sigla do partido ao qual o deputado pertence."
+        tests:
+          - not_null
+      - name: siglauf
+        description: "Sigla da unidade federativa (estado) que o deputado representa."
+        tests:
+          - not_null
+      - name: idlegislatura
+        description: "Identificador da legislatura à qual o deputado pertence."
+        tests:
+          - not_null
+      - name: email
+        description: "Endereço de email do deputado."
+        tests:
+          - not_null
+
+  - name: mart_deputados_por_partido
+    description: "Tabela de fatos que mostra a contagem de deputados por partido."
+    columns:
+      - name: siglapartido
+        description: "Sigla do partido político."
+        tests:
+          - unique
+          - not_null
+      - name: total_deputados
+        description: "Número total de deputados pertencentes a cada partido."
+        tests:
+          - not_null
