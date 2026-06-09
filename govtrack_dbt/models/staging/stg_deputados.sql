@@ -1,3 +1,3 @@
-SELECT id, nome, siglapartido, siglauf, idlegislatura, email 
+SELECT id, nome, "siglaPartido", "siglaUf", "idLegislatura", email
 FROM {{ ref('deputados') }}
 WHERE nome IS NOT NULL
