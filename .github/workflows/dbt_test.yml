@@ -26,8 +26,36 @@ jobs:
         with:
           python-version: '3.11'
           
-      - name: Install dbt
-        run: pip install dbt-core==1.8.0 dbt-postgres==1.8.0
+      - name: Install dependencies
+        run: pip install dbt-core==1.8.0 dbt-postgres==1.8.0 psycopg2-binary requests pandas pyarrow
+
+      - name: Seed database
+        run: |
+          python3 -c "
+          import psycopg2
+          conn = psycopg2.connect(host='localhost', database='govtrack', user='govtrack', password='govtrack123')
+          cur = conn.cursor()
+          cur.execute('''CREATE TABLE IF NOT EXISTS deputados (id INTEGER PRIMARY KEY, nome VARCHAR(255), siglapartido VARCHAR(255), siglauf VARCHAR(255), idlegislatura INTEGER, email VARCHAR(255))''')
+          conn.commit()
+          conn.close()
+          print('Tabela criada')
+          "
+
+      - name: Fetch and load deputies
+        run: |
+          python3 -c "
+          import requests, psycopg2
+          resp = requests.get('https://dadosabertos.camara.leg.br/api/v2/deputados?itens=20')
+          deps = resp.json()['dados']
+          conn = psycopg2.connect(host='localhost', database='govtrack', user='govtrack', password='govtrack123')
+          cur = conn.cursor()
+          for d in deps:
+              cur.execute('INSERT INTO deputados (id, nome, siglapartido, siglauf, idlegislatura, email) VALUES (%s, %s, %s, %s, %s, %s) ON CONFLICT (id) DO NOTHING',
+                  (d['id'], d['nome'], d['siglaPartido'], d['siglaUf'], d['idLegislatura'], d['email']))
+          conn.commit()
+          conn.close()
+          print(f'Carregado {len(deps)} deputados')
+          "
           
       - name: Run dbt
         run: |
