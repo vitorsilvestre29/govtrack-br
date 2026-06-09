@@ -1,4 +1,4 @@
-SELECT siglapartido, COUNT(*) AS total_deputados 
+SELECT "siglaPartido", COUNT(*) AS total_deputados 
 FROM {{ ref('stg_deputados') }}
-GROUP BY siglapartido
+GROUP BY "siglaPartido"
 ORDER BY total_deputados DESC
