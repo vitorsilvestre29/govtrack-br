@@ -1,0 +1,45 @@
+[2026-06-09T18:55:18.276+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.salvar_bronze_emendas manual__2026-06-09T18:55:16.598890+00:00 [queued]>
+[2026-06-09T18:55:18.289+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.salvar_bronze_emendas manual__2026-06-09T18:55:16.598890+00:00 [queued]>
+[2026-06-09T18:55:18.290+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T18:55:18.290+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-06-09T18:55:18.290+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T18:55:18.312+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): salvar_bronze_emendas> on 2026-06-09 18:55:16.598890+00:00
+[2026-06-09T18:55:18.324+0000] {standard_task_runner.py:55} INFO - Started process 188 to run task
+[2026-06-09T18:55:18.328+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_deputados', 'salvar_bronze_emendas', 'manual__2026-06-09T18:55:16.598890+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_deputados.py', '--cfg-path', '/tmp/tmpu0_bxgv4']
+[2026-06-09T18:55:18.330+0000] {standard_task_runner.py:83} INFO - Job 28: Subtask salvar_bronze_emendas
+[2026-06-09T18:55:18.449+0000] {task_command.py:388} INFO - Running <TaskInstance: pipeline_deputados.salvar_bronze_emendas manual__2026-06-09T18:55:16.598890+00:00 [running]> on host 78cfd50ce143
+[2026-06-09T18:55:18.590+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=pipeline_deputados
+AIRFLOW_CTX_TASK_ID=salvar_bronze_emendas
+AIRFLOW_CTX_EXECUTION_DATE=2026-06-09T18:55:16.598890+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-06-09T18:55:16.598890+00:00
+[2026-06-09T18:55:19.368+0000] {logging_mixin.py:137} INFO - 200
+[2026-06-09T18:55:19.429+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/src/ingestion/bronze_emendas.py", line 11, in salvar_bronze_emendas
+    df.to_parquet(f"{DATA_PATH}/bronze/emendas.parquet", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 2685, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 423, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 180, in write
+    is_dir=partition_cols is not None,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 102, in _get_path_or_handle
+    path_or_handle, mode, is_text=False, storage_options=storage_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/vitor/govtrack-br/data/bronze/emendas.parquet'
+[2026-06-09T18:55:19.449+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=pipeline_deputados, task_id=salvar_bronze_emendas, execution_date=20260609T185516, start_date=20260609T185518, end_date=20260609T185519
+[2026-06-09T18:55:19.466+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 28 for task salvar_bronze_emendas ([Errno 2] No such file or directory: '/home/vitor/govtrack-br/data/bronze/emendas.parquet'; 188)
+[2026-06-09T18:55:19.508+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2026-06-09T18:55:19.545+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,24 @@
+[2026-06-09T19:40:30.428+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.transformar_gold manual__2026-06-09T19:40:25.244496+00:00 [queued]>
+[2026-06-09T19:40:30.445+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.transformar_gold manual__2026-06-09T19:40:25.244496+00:00 [queued]>
+[2026-06-09T19:40:30.445+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T19:40:30.445+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-06-09T19:40:30.446+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T19:40:30.464+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): transformar_gold> on 2026-06-09 19:40:25.244496+00:00
+[2026-06-09T19:40:30.476+0000] {standard_task_runner.py:55} INFO - Started process 262 to run task
+[2026-06-09T19:40:30.482+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_deputados', 'transformar_gold', 'manual__2026-06-09T19:40:25.244496+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_deputados.py', '--cfg-path', '/tmp/tmptu0s0u1v']
+[2026-06-09T19:40:30.485+0000] {standard_task_runner.py:83} INFO - Job 45: Subtask transformar_gold
+[2026-06-09T19:40:30.594+0000] {task_command.py:388} INFO - Running <TaskInstance: pipeline_deputados.transformar_gold manual__2026-06-09T19:40:25.244496+00:00 [running]> on host 398671cd1136
+[2026-06-09T19:40:30.712+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=pipeline_deputados
+AIRFLOW_CTX_TASK_ID=transformar_gold
+AIRFLOW_CTX_EXECUTION_DATE=2026-06-09T19:40:25.244496+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-06-09T19:40:25.244496+00:00
+[2026-06-09T19:40:31.030+0000] {logging_mixin.py:137} INFO - Salvo deputados por partido em gold.
+[2026-06-09T19:40:31.031+0000] {python.py:177} INFO - Done. Returned value was: None
+[2026-06-09T19:40:31.049+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=pipeline_deputados, task_id=transformar_gold, execution_date=20260609T194025, start_date=20260609T194030, end_date=20260609T194031
+[2026-06-09T19:40:31.136+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-06-09T19:40:31.170+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

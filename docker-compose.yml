@@ -25,6 +25,7 @@ services:
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow123@postgres-airflow:5432/airflow
+      - DATA_PATH=/opt/airflow/data
     ports:
       - "8081:8080"
     depends_on:
@@ -35,12 +36,14 @@ services:
     - ./logs:/opt/airflow/logs
     - ./src:/opt/airflow/src
     - ./data:/opt/airflow/data
+    
 
   airflow-scheduler:
     image: apache/airflow:2.5.1
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow123@postgres-airflow:5432/airflow
+      - DATA_PATH=/opt/airflow/data
     depends_on:
       - postgres-airflow
     command: scheduler  

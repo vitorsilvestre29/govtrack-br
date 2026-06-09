@@ -1,0 +1,45 @@
+[2026-06-09T19:38:49.461+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.salvar_bronze_emendas manual__2026-06-09T19:38:47.953616+00:00 [queued]>
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.salvar_bronze_emendas manual__2026-06-09T19:38:47.953616+00:00 [queued]>
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T19:38:49.497+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): salvar_bronze_emendas> on 2026-06-09 19:38:47.953616+00:00
+[2026-06-09T19:38:49.509+0000] {standard_task_runner.py:55} INFO - Started process 195 to run task
+[2026-06-09T19:38:49.516+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_deputados', 'salvar_bronze_emendas', 'manual__2026-06-09T19:38:47.953616+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_deputados.py', '--cfg-path', '/tmp/tmpurzsba5x']
+[2026-06-09T19:38:49.520+0000] {standard_task_runner.py:83} INFO - Job 34: Subtask salvar_bronze_emendas
+[2026-06-09T19:38:49.638+0000] {task_command.py:388} INFO - Running <TaskInstance: pipeline_deputados.salvar_bronze_emendas manual__2026-06-09T19:38:47.953616+00:00 [running]> on host aeb1377d69ac
+[2026-06-09T19:38:49.767+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=pipeline_deputados
+AIRFLOW_CTX_TASK_ID=salvar_bronze_emendas
+AIRFLOW_CTX_EXECUTION_DATE=2026-06-09T19:38:47.953616+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-06-09T19:38:47.953616+00:00
+[2026-06-09T19:38:49.930+0000] {logging_mixin.py:137} INFO - 200
+[2026-06-09T19:38:50.414+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/src/ingestion/bronze_emendas.py", line 11, in salvar_bronze_emendas
+    df.to_parquet(f"{DATA_PATH}/bronze/emendas.parquet", index=False)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 207, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 2685, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 423, in to_parquet
+    **kwargs,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 180, in write
+    is_dir=partition_cols is not None,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/parquet.py", line 102, in _get_path_or_handle
+    path_or_handle, mode, is_text=False, storage_options=storage_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 711, in get_handle
+    handle = open(handle, ioargs.mode)
+PermissionError: [Errno 13] Permission denied: '/opt/airflow/data/bronze/emendas.parquet'
+[2026-06-09T19:38:50.439+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=pipeline_deputados, task_id=salvar_bronze_emendas, execution_date=20260609T193847, start_date=20260609T193849, end_date=20260609T193850
+[2026-06-09T19:38:50.461+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 34 for task salvar_bronze_emendas ([Errno 13] Permission denied: '/opt/airflow/data/bronze/emendas.parquet'; 195)
+[2026-06-09T19:38:50.493+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2026-06-09T19:38:50.534+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

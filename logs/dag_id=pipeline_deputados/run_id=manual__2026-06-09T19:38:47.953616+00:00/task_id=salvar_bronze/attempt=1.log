@@ -1,0 +1,24 @@
+[2026-06-09T19:38:49.460+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.salvar_bronze manual__2026-06-09T19:38:47.953616+00:00 [queued]>
+[2026-06-09T19:38:49.477+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: pipeline_deputados.salvar_bronze manual__2026-06-09T19:38:47.953616+00:00 [queued]>
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2026-06-09T19:38:49.478+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2026-06-09T19:38:49.495+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): salvar_bronze> on 2026-06-09 19:38:47.953616+00:00
+[2026-06-09T19:38:49.507+0000] {standard_task_runner.py:55} INFO - Started process 194 to run task
+[2026-06-09T19:38:49.516+0000] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_deputados', 'salvar_bronze', 'manual__2026-06-09T19:38:47.953616+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_deputados.py', '--cfg-path', '/tmp/tmpn3pty7fl']
+[2026-06-09T19:38:49.520+0000] {standard_task_runner.py:83} INFO - Job 35: Subtask salvar_bronze
+[2026-06-09T19:38:49.640+0000] {task_command.py:388} INFO - Running <TaskInstance: pipeline_deputados.salvar_bronze manual__2026-06-09T19:38:47.953616+00:00 [running]> on host aeb1377d69ac
+[2026-06-09T19:38:49.772+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=pipeline_deputados
+AIRFLOW_CTX_TASK_ID=salvar_bronze
+AIRFLOW_CTX_EXECUTION_DATE=2026-06-09T19:38:47.953616+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2026-06-09T19:38:47.953616+00:00
+[2026-06-09T19:38:50.479+0000] {logging_mixin.py:137} INFO - Salvo 512 deputados em bronze.
+[2026-06-09T19:38:50.481+0000] {python.py:177} INFO - Done. Returned value was: None
+[2026-06-09T19:38:50.501+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=pipeline_deputados, task_id=salvar_bronze, execution_date=20260609T193847, start_date=20260609T193849, end_date=20260609T193850
+[2026-06-09T19:38:50.571+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2026-06-09T19:38:50.610+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check
