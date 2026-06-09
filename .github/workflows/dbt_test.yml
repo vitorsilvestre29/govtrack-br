@@ -29,9 +29,10 @@ jobs:
       - name: Install dbt
         run: pip install dbt-core==1.8.0 dbt-postgres==1.8.0
           
-      - name: Run dbt test
+      - name: Run dbt
         run: |
           cd govtrack_dbt
+          dbt run
           dbt test
         env:
           DBT_PROFILES_DIR: .
