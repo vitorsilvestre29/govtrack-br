@@ -27,7 +27,7 @@ jobs:
           python-version: '3.11'
           
       - name: Install dbt
-        run: pip install dbt-postgres==1.8.0
+        run: pip install dbt-core==1.8.0 dbt-postgres==1.8.0
           
       - name: Run dbt test
         run: |
