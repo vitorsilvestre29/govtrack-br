@@ -7,10 +7,15 @@ services:
       - POSTGRES_DB=govtrack
     ports:
       - "5432:5432"
+    networks:
+      - govtrack-network
+
   adminer:
     image: adminer
     ports:
       - "8080:8080"
+    networks:
+      - govtrack-network
 
   postgres-airflow:
     image: postgres:15
@@ -20,6 +25,9 @@ services:
       - POSTGRES_DB=airflow
     ports:
       - "5433:5432"
+    networks:
+      - govtrack-network
+
   airflow-webserver:
     image: apache/airflow:2.5.1
     environment:
@@ -32,11 +40,12 @@ services:
       - postgres-airflow
     command: webserver
     volumes:
-    - ./dags:/opt/airflow/dags
-    - ./logs:/opt/airflow/logs
-    - ./src:/opt/airflow/src
-    - ./data:/opt/airflow/data
-    
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+    networks:
+      - govtrack-network
 
   airflow-scheduler:
     image: apache/airflow:2.5.1
@@ -46,11 +55,26 @@ services:
       - DATA_PATH=/opt/airflow/data
     depends_on:
       - postgres-airflow
-    command: scheduler  
+    command: scheduler
     volumes:
-    - ./dags:/opt/airflow/dags
-    - ./logs:/opt/airflow/logs
-    - ./src:/opt/airflow/src
-    - ./data:/opt/airflow/data
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./src:/opt/airflow/src
+      - ./data:/opt/airflow/data
+    networks:
+      - govtrack-network
 
+  superset:
+    image: apache/superset
+    ports:
+      - "8088:8088"
+    depends_on:
+      - postgres
+    environment:
+      - SUPERSET_SECRET_KEY=govtrack_secret_key
+    networks:
+      - govtrack-network
 
+networks:
+  govtrack-network:
+    driver: bridge
