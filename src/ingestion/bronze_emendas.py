@@ -1,7 +1,8 @@
 import sys
 import pandas as pd
-from src.ingestion.transparencia import buscar_emendas
+from transparencia import buscar_emendas
 
+sys.path.insert(0, '../..')
 from src.config import DATA_PATH
 
 def salvar_bronze_emendas():

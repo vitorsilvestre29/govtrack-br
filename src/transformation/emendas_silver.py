@@ -1,6 +1,7 @@
 import pandas as pd
 import sys
 
+sys.path.insert(0, '../..')
 from src.config import DATA_PATH
 
 def emendas_silver():
