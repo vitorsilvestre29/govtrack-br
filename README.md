@@ -4,7 +4,7 @@ Pipeline de dados que reúne e processa informações públicas do governo feder
 
 ## Dashboard
 
-![GovTrack BR Dashboard](docs/dashboard.png)
+<img width="1827" height="847" alt="image" src="https://github.com/user-attachments/assets/fcac0fed-6bd3-443b-b3ea-ebfb71026a2b" />
 
 ## Fontes de dados
 
@@ -66,5 +66,3 @@ docker exec -it govtrack-br-superset-1 superset init
 ```
 
 Acessa `localhost:8088` — login: `admin` / `admin123`
-
-<img width="1827" height="847" alt="image" src="https://github.com/user-attachments/assets/fcac0fed-6bd3-443b-b3ea-ebfb71026a2b" />
