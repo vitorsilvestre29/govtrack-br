@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 data/
 logs/
+.env
 aula01.py
 aula02.py
 aula03.py

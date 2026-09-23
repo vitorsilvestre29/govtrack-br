@@ -3,7 +3,7 @@ services:
     image: postgres:15
     environment:
       - POSTGRES_USER=govtrack
-      - POSTGRES_PASSWORD=govtrack123
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
       - POSTGRES_DB=govtrack
     ports:
       - "5432:5432"
@@ -21,7 +21,7 @@ services:
     image: postgres:15
     environment:
       - POSTGRES_USER=airflow
-      - POSTGRES_PASSWORD=airflow123
+      - POSTGRES_PASSWORD=${AIRFLOW_DB_PASSWORD}
       - POSTGRES_DB=airflow
     ports:
       - "5433:5432"
@@ -32,7 +32,7 @@ services:
     image: apache/airflow:2.5.1
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow123@postgres-airflow:5432/airflow
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:${AIRFLOW_DB_PASSWORD}@postgres-airflow:5432/airflow
       - DATA_PATH=/opt/airflow/data
     ports:
       - "8081:8080"
@@ -51,7 +51,7 @@ services:
     image: apache/airflow:2.5.1
     environment:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
-      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow123@postgres-airflow:5432/airflow
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:${AIRFLOW_DB_PASSWORD}@postgres-airflow:5432/airflow
       - DATA_PATH=/opt/airflow/data
     depends_on:
       - postgres-airflow
@@ -71,7 +71,7 @@ services:
     depends_on:
       - postgres
     environment:
-      - SUPERSET_SECRET_KEY=govtrack_secret_key
+      - SUPERSET_SECRET_KEY=${SUPERSET_SECRET_KEY}
     networks:
       - govtrack-network
 

@@ -52,6 +52,7 @@ Cada push na branch `main` dispara automaticamente o GitHub Actions que roda `db
 ```bash
 git clone https://github.com/vitorsilvestre29/govtrack-br
 cd govtrack-br
+cp .env.example .env  # preencha com suas próprias credenciais
 docker compose up -d
 ```
 
@@ -61,8 +62,8 @@ docker compose up -d
 docker exec -it govtrack-br-superset-1 superset db upgrade
 docker exec -it govtrack-br-superset-1 superset fab create-admin \
   --username admin --firstname Admin --lastname Admin \
-  --email admin@govtrack.com --password admin123
+  --email admin@govtrack.com --password <sua-senha>
 docker exec -it govtrack-br-superset-1 superset init
 ```
 
-Acessa `localhost:8088` — login: `admin` / `admin123`
+Acessa `localhost:8088` com o usuário e senha definidos no passo acima.

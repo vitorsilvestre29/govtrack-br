@@ -1,8 +1,9 @@
+import os
 import requests
 
 def buscar_emendas():
     url = "https://api.portaldatransparencia.gov.br/api-de-dados/emendas"
-    headers = {"chave-api-dados": "3ea1c266a28f917fbff20c86afd7448a"}
+    headers = {"chave-api-dados": os.environ["PORTAL_TRANSPARENCIA_API_KEY"]}
     todas_emendas = []
     
     for pagina in range(1, 6):
