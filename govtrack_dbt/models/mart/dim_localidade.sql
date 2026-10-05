@@ -1,0 +1,1 @@
+SELECT DISTINCT localidadeDoGasto FROM {{ ref('stg_emendas') }}

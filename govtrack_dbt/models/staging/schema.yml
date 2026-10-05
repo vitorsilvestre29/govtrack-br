@@ -46,3 +46,4 @@ sources:
     schema: GovTrackBr_Base
     tables:
       - name: deputados_bruto
+      - name: emendas_bruto

@@ -1,0 +1,1 @@
+SELECT DISTINCT funcao FROM {{ ref('stg_emendas') }}

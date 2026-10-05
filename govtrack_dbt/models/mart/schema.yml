@@ -1,0 +1,29 @@
+version: 2
+models:
+  - name: fato_emendas
+    description: "Uma linha por emenda, com o valor pago, o autor, a função e a localidade do gasto. Liga às dimensões dim_autor, dim_funcao e dim_localidade."
+    columns:
+      - name: autor
+        tests:
+            - relationships:
+               arguments:
+                to: ref('dim_autor')
+                field: autor
+      - name: funcao
+        tests:
+            - relationships:
+               arguments:
+                to: ref('dim_funcao')
+                field: funcao
+      - name: localidadeDoGasto
+        tests:  
+            - relationships:
+               arguments:
+                to: ref('dim_localidade')
+                field: localidadeDoGasto
+  - name: dim_autor
+    description: "Lista de autores de emendas, uma linha por autor, com o tipo do autor (Comissão, Bancada, Relator, Sem informação ou Outro)."
+  - name: dim_funcao
+    description: "Lista das funções das emendas (ex.: Saúde, Urbanismo), uma linha por função."
+  - name: dim_localidade
+    description: "Lista das localidades onde o gasto da emenda foi feito, uma linha por localidade."
