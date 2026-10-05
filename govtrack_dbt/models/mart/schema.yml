@@ -20,6 +20,11 @@ models:
                 field: localidadeDoGasto
   - name: dim_autor
     description: "Lista de autores de emendas, uma linha por autor, com o tipo do autor (Comissão, Bancada, Relator, Sem informação ou Outro)."
+    columns:
+      - name: tipo_autor
+        tests:
+          - accepted_values:
+              values: ['Comissão', 'Comissão de Finanças e Tributação', 'Bancada', 'Relator', 'Sem informação', 'Outro']
   - name: dim_funcao
     description: "Lista das funções das emendas (ex.: Saúde, Urbanismo), uma linha por função."
   - name: dim_localidade
