@@ -34,6 +34,13 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:${AIRFLOW_DB_PASSWORD}@postgres-airflow:5432/airflow
       - DATA_PATH=/opt/airflow/data
+      - PORTAL_TRANSPARENCIA_API_KEY=${PORTAL_TRANSPARENCIA_API_KEY}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=postgres
+      - _PIP_ADDITIONAL_REQUIREMENTS=google-cloud-bigquery dbt-bigquery==1.5.0
+      - BIGQUERY_PROJECT_ID=${BIGQUERY_PROJECT_ID}
+      - BIGQUERY_DATASET=${BIGQUERY_DATASET}
+      
     ports:
       - "8081:8080"
     depends_on:
@@ -44,6 +51,8 @@ services:
       - ./logs:/opt/airflow/logs
       - ./src:/opt/airflow/src
       - ./data:/opt/airflow/data
+      - 'C:\Users\Vitor\AppData\Roaming\gcloud\application_default_credentials.json:/home/airflow/.config/gcloud/application_default_credentials.json'
+      - ./govtrack_dbt:/opt/airflow/govtrack_dbt
     networks:
       - govtrack-network
 
@@ -53,6 +62,12 @@ services:
       - AIRFLOW__CORE__EXECUTOR=LocalExecutor
       - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:${AIRFLOW_DB_PASSWORD}@postgres-airflow:5432/airflow
       - DATA_PATH=/opt/airflow/data
+      - PORTAL_TRANSPARENCIA_API_KEY=${PORTAL_TRANSPARENCIA_API_KEY}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=postgres
+      - _PIP_ADDITIONAL_REQUIREMENTS=google-cloud-bigquery dbt-bigquery==1.5.0
+      - BIGQUERY_PROJECT_ID=${BIGQUERY_PROJECT_ID}
+      - BIGQUERY_DATASET=${BIGQUERY_DATASET}
     depends_on:
       - postgres-airflow
     command: scheduler
@@ -61,6 +76,8 @@ services:
       - ./logs:/opt/airflow/logs
       - ./src:/opt/airflow/src
       - ./data:/opt/airflow/data
+      - 'C:\Users\Vitor\AppData\Roaming\gcloud\application_default_credentials.json:/home/airflow/.config/gcloud/application_default_credentials.json'
+      - ./govtrack_dbt:/opt/airflow/govtrack_dbt
     networks:
       - govtrack-network
 

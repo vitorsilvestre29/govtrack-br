@@ -1,12 +1,9 @@
 govtrack_dbt:
   outputs:
     dev:
-      type: postgres
+      type: bigquery
       threads: 1
-      host: localhost
-      port: 5432
-      user: govtrack
-      pass: govtrack123
-      dbname: govtrack
-      schema: public
+      project: govtrackbr
+      method: oauth
+      dataset: GovTrackBr_Analitico
   target: dev

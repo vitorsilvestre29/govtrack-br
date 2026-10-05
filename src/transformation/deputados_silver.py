@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def transformar_silver():
     df = pd.read_parquet("/opt/airflow/data/bronze/deputados.parquet")
     df_silver = df[["id", "nome", "siglaPartido", "siglaUf", "idLegislatura", "email"]]

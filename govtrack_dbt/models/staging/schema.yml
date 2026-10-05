@@ -41,3 +41,8 @@ models:
         description: "Número total de deputados pertencentes a cada partido."
         tests:
           - not_null
+sources:
+  - name: govtrack_bruto
+    schema: GovTrackBr_Base
+    tables:
+      - name: deputados_bruto
