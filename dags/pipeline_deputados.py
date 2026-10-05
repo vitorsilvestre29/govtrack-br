@@ -9,6 +9,7 @@ from src.ingestion.bronze_emendas import salvar_bronze_emendas
 from src.transformation.emendas_silver import emendas_silver
 from src.transformation.emendas_gold import emendas_gold
 from src.ingestion.silver_bigquery import carregar_silver_bigquery
+from src.ingestion.silver_bigquery_emendas import carregar_silver_emendas_bigquery
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
@@ -61,6 +62,11 @@ with DAG(
         python_callable=carregar_silver_bigquery
     )
 
+    tarefa_silver_emendas_bigquery = PythonOperator(
+        task_id='salvar_silver_emendas_bigquery',
+        python_callable=carregar_silver_emendas_bigquery
+    )
+
     tarefa_bash_teste = BashOperator(
             task_id='tarefa_bash_teste',
             bash_command='cd /opt/airflow/govtrack_dbt && dbt test --profiles-dir .'
@@ -72,5 +78,5 @@ with DAG(
     )
 
     tarefa_bronze >> tarefa_silver >> tarefa_silver_bigquery >> tarefa_bash_teste >> tarefa_bash >> tarefa_gold >> tarefa_popular_banco
-    tarefa_salvar_bronze_emendas >> tarefa_emendas_silver >> tarefa_emendas_gold
+    tarefa_salvar_bronze_emendas >> tarefa_emendas_silver >> tarefa_silver_emendas_bigquery >> tarefa_emendas_gold
     
