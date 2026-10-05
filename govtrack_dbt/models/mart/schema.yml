@@ -6,19 +6,16 @@ models:
       - name: autor
         tests:
             - relationships:
-               arguments:
                 to: ref('dim_autor')
                 field: autor
       - name: funcao
         tests:
             - relationships:
-               arguments:
                 to: ref('dim_funcao')
                 field: funcao
       - name: localidadeDoGasto
-        tests:  
+        tests:
             - relationships:
-               arguments:
                 to: ref('dim_localidade')
                 field: localidadeDoGasto
   - name: dim_autor
